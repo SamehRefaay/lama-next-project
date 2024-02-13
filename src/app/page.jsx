@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home() {
 	return (
 		<main className="w-full ">
-			<div className="border w-full  px-4 sm:w-11/12 max-w-screen-2xl mx-auto grid gap-20 md:grid-cols-2">
+			<div className=" w-full px-4 sm:w-11/12 max-w-screen-2xl mx-auto grid gap-20 md:grid-cols-2">
 				<div className="w-full h-[calc(100vh-104px)] flex flex-col justify-around text-center sm:text-left text-white">
 					<h1 className="text-4xl sm:text-7xl font-extrabold sm:w-1/2 ">
 						Creative Thougths Agency.
@@ -25,7 +25,7 @@ export default function Home() {
 						<Image className="object-contain" src="/brands.png" alt="" fill />
 					</div>
 				</div>
-				<div className="border relative w-full m-auto h-96 z-0">
+				<div className=" relative w-full m-auto h-96 z-0">
 					<Image className="object-contain" src="/hero.gif" alt="" fill />
 				</div>
 			</div>
