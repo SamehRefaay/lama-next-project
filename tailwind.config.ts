@@ -20,7 +20,7 @@ const config: Config = {
 			keyframes: {
 				openmenu: {
 					// initial position
-					'0%': { left: '-224px' },
+					'0%': { left: '-50%' },
 					//final position
 					'100%': { left: '0px' },
 				},
@@ -28,7 +28,7 @@ const config: Config = {
 					// initial position
 					'0%': { left: '0px' },
 					//final position
-					'100%': { left: '-224px' },
+					'100%': { left: '-50%' },
 				},
 			},
 		},
