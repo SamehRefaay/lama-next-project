@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutPage = () => {
 	return (
-		<main className="w-full">
+		<main className="relative z-0 w-full">
 			{/* container */}
 			<div className="w-11/12 mx-auto px-4 max-w-screen-2xl grid md:grid-cols-2 gap-20">
 				{/* text container left side */}

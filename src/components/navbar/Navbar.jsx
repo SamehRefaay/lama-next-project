@@ -17,7 +17,7 @@ const Navbar = () => {
 	const toggleDrawer = () => {
 		setOpen(!open);
 		const drawerClasses =
-			'absolute z-50 top-0 w-1/2 h-[80vh] bg-white text-black';
+			'absolute top-0 w-1/2 h-screen bg-blue-600 text-white';
 		if (open) {
 			setClassName(drawerClasses + ' left-[0] animate-openmenu');
 		} else {
@@ -26,7 +26,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="w-full  sticky text-white">
+		<div className="z-10 w-full sticky text-white">
 			<div className="h-16 w-full max-w-screen-2xl sm:w-11/12 px-4 mx-auto flex justify-between items-center ">
 				<h1 className="text-3xl font-bold">
 					<Link href="/">Lama</Link>
@@ -39,15 +39,15 @@ const Navbar = () => {
 				</div>
 				{/* popup menu button */}
 				<button className="sm:hidden relative w-7 h-7" onClick={toggleDrawer}>
-					<Image src="/menu.png" alt="menu" fill />
+					<Image src="/menu.png" alt="menu" fill sizes="100%" />
 				</button>
 			</div>
 			{/* popup menu */}
 			<div className={className}>
-				<h1 className="p-4 text-4xl font-bold">
+				<h1 className="w-full h-40 grid place-content-center text-3xl font-bold">
 					<Link href="/">Lama</Link>
 				</h1>
-				<Links links={links} popupMenu={true} setOpen={setOpen} />
+				<Links links={links} popupMenu={true} handleClick={toggleDrawer} />
 			</div>
 		</div>
 	);

@@ -1,7 +1,8 @@
+'use client';
 import Link from 'next/link';
 import NavLink from './navLink/NavLink';
 
-const Links = ({ links, popupMenu = false, setOpen }) => {
+const Links = ({ links, popupMenu = false, handleClick }) => {
 	return (
 		<nav
 			className={
@@ -13,10 +14,10 @@ const Links = ({ links, popupMenu = false, setOpen }) => {
 			{links.map(link =>
 				popupMenu ? (
 					<Link
-						className="border-t w-full p-5 text-xl"
-						key={link.title}
 						href={link.path}
-						onClick={() => setOpen(false)}
+						className="border-t border-blue-500 hover:bg-[var(--bg)] w-full p-5 text-xl"
+						key={link.title}
+						onClick={handleClick}
 					>
 						{link.title}
 					</Link>

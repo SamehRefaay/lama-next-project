@@ -4,12 +4,13 @@ import React from 'react';
 
 const BLogCard = ({ post }) => {
 	return (
-		<div className="w-full p-4">
+		<article className="w-full p-4">
 			<div className="relative">
-				<div className="relative flex w-[95%] h-[380px] mb-4">
+				<div className="relative w-[95%] h-[380px] mb-4">
 					<Image
 						className="object-cover"
 						src={post?.image}
+						sizes="100%"
 						alt="post-image"
 						fill
 					/>
@@ -19,13 +20,13 @@ const BLogCard = ({ post }) => {
 				</span>
 			</div>
 			<div className="w-full text-white">
-				<h2 className="text-2xl mb-4">{post.title}</h2>
-				<p className="text-gray-400 text-sm mb-4">{post.body}</p>
-				<Link className="underline" href={`/blog/${post.id}`}>
+				<h2 className="text-2xl mb-4">{post?.title}</h2>
+				<p className="text-gray-400 text-sm mb-4">{post?.body}</p>
+				<Link className="underline cursor-pointer" href={`/blog/${post?.id}`}>
 					READ MORE
 				</Link>
 			</div>
-		</div>
+		</article>
 	);
 };
 

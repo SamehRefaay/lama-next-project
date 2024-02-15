@@ -4,7 +4,7 @@ import React from 'react';
 
 const ContactPage = () => {
 	return (
-		<div className="w-full">
+		<div className="relative z-0 w-full">
 			<div className="w-11/12 max-w-screen-2xl mx-auto px-4 grid md:grid-cols-2 gap-16">
 				<div className="relative w-full h-[calc(100vh-104px)] flex items-center">
 					<Image
@@ -62,7 +62,6 @@ const ContactPage = () => {
 							message
 						</label>
 						<textarea
-							bg-slate-700
 							className="mt-4 w-full p-4 bg-[var(--bg-light)] rounded-md text-white outline-none"
 							placeholder="Message"
 							rows={4}
