@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<main className="relative -z-10 w-full">
+		<main className="relative z-0 w-full">
 			<div className=" w-full px-4 sm:w-11/12 max-w-screen-2xl mx-auto grid gap-20 md:grid-cols-2">
 				<div className="w-full h-[calc(100vh-104px)] flex flex-col justify-around text-center sm:text-left text-white">
 					<h1 className="text-4xl sm:text-7xl font-extrabold sm:w-1/2 ">
@@ -15,10 +16,10 @@ export default function Home() {
 					</p>
 					<div className="flex gap-4 mx-auto sm:mx-0">
 						<button className="w-32 p-4 bg-blue-600 text-white border-none rounded-md">
-							Learn More
+							<Link href="/blog">Learn More</Link>
 						</button>
 						<button className="w-32 p-4 border-none bg-white text-black rounded-md">
-							Contact
+							<Link href="/contact">Contact</Link>
 						</button>
 					</div>
 					<div className="h-8 w-5/6 mx-auto sm:mx-0 relative items-center grayscale">

@@ -35,7 +35,13 @@ const AboutPage = () => {
 				</div>
 				{/* img contianer right side */}
 				<div className="relative w-full h-[400px] m-auto">
-					<Image className="object-contain" src="/about.png" alt="" fill />
+					<Image
+						className="object-contain"
+						src="/about.png"
+						sizes="100%"
+						alt=""
+						fill
+					/>
 				</div>
 			</div>
 		</main>

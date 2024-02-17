@@ -8,7 +8,7 @@ const Links = ({ links, popupMenu = false, handleClick }) => {
 			className={
 				popupMenu
 					? 'h-full items-center flex flex-col text-center'
-					: 'h-full items-center flex gap-6 '
+					: 'h-full items-center flex gap-2'
 			}
 		>
 			{links.map(link =>
